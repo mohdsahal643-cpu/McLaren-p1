@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="A scroll-driven McLaren P1 product story." />
+    <title>McLaren P1 — Engineered Without Compromise</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="loader" aria-live="polite" aria-label="Loading vehicle sequence">
+      <div class="loader__track"><span class="loader__bar"></span></div>
+      <p>Loading precision <span class="loader__value">0%</span></p>
+    </div>
+
+    <main id="main">
+      <section class="section hero" id="top" aria-labelledby="hero-title">
+        <div class="asset-placeholder" aria-hidden="true"><span>Hero still required</span></div>
+        <div class="section-copy hero__copy">
+          <p class="eyebrow">McLaren P1 — Volcano Orange</p>
+          <h1 id="hero-title">Engineered without <em>compromise</em></h1>
+        </div>
+        <a class="scroll-cue" href="#design">Scroll to explore <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="section design" id="design" aria-labelledby="design-title">
+        <div class="design__visual" aria-hidden="true">
+          <img src="Scroll-images-ai-web/ezgif-frame-001.jpg" alt="" />
+        </div>
+        <div class="section-copy design__copy">
+          <p class="eyebrow">Form follows force</p>
+          <h2 id="design-title">Every surface has a job</h2>
+          <p>Carbon fibre monocage. Active aerodynamics. A shape shaped entirely by airflow, not styling.</p>
+        </div>
+        <ul class="callouts" aria-label="Exterior features">
+          <li>Dihedral doors</li><li>Active rear wing</li><li>Carbon monocage</li><li>Front splitter</li>
+        </ul>
+      </section>
+
+      <div class="section explode-intro">
+        <div class="section-copy">
+          <p class="eyebrow">Inside the P1</p>
+          <h2 id="explode-title"><em>903 horsepower,</em> taken apart</h2>
+        </div>
+      </div>
+
+      <section class="explode" id="explode" aria-label="Exploded vehicle sequence">
+        <div class="explode__stage">
+          <canvas class="sequence" width="1280" height="720" aria-hidden="true"></canvas>
+          <div class="mobile-fallback asset-placeholder" aria-hidden="true"><span>Exploded hero still required</span></div>
+          <p class="explode__progress"><span>01</span> / 180</p>
+          <p class="explode__closing">This is what precision looks like from the inside.</p>
+        </div>
+      </section>
+
+      <section class="section performance" id="performance" aria-labelledby="performance-title">
+        <div class="section-copy performance__heading">
+          <p class="eyebrow">Performance</p>
+          <h2 id="performance-title">The numbers don't explain it</h2>
+          <p>But they're a start.</p>
+        </div>
+        <dl class="stats">
+          <div><dt>Combined power</dt><dd><span data-count="903">903</span> <small>HP</small></dd></div>
+          <div><dt>Torque</dt><dd><span data-count="664">664</span> <small>lb-ft</small></dd></div>
+          <div><dt>0–60 mph</dt><dd><span data-count="2.8" data-decimals="1">2.8</span><small>s</small></dd></div>
+          <div><dt>Top speed</dt><dd><span data-count="217">217</span> <small>mph</small><b>electronically limited</b></dd></div>
+          <div><dt>Peak downforce</dt><dd><span data-count="600">600</span> <small>kg</small><b>1,323 lbs</b></dd></div>
+        </dl>
+      </section>
+
+      <section class="section closing" id="closing" aria-labelledby="closing-title">
+        <div class="asset-placeholder" aria-hidden="true"><span>Exploded hero still required</span></div>
+        <div class="section-copy closing__copy">
+          <p class="eyebrow">The whole machine</p>
+          <h2 id="closing-title">See it whole again</h2>
+          <p>A practice build exploring scroll-driven storytelling — one product, one story, one scroll.</p>
+          <a class="button" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
